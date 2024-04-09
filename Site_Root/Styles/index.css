@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-    padding: 0;
+       margin: 0;
+       padding: 0;
 } 
 #background { 
        left: 0px; 
@@ -54,26 +54,26 @@ body {
        z-index: 5;
 } 
 #logo { 
-	 left: 75px; 
-	 top: 19px; 
-	 position: absolute; 
-	 width: 209px;
-	 height: 192px;
-	 z-index: 11;
+	left: 75px; 
+	top: 19px; 
+	position: absolute; 
+	width: 209px;
+	height: 192px;
+	z-index: 11;
 } 
 #wemakeart { 
-	 left: 296px; 
-	 top: 588px; 
-	 position: absolute; 
-	 width: 636px;
-	 height: 53px;
-	 z-index: 16;
+	left: 296px; 
+	top: 588px; 
+	position: absolute; 
+	width: 636px;
+	height: 53px;
+	z-index: 16;
 } 
 #logo2 { 
-	 left: 894px; 
-	 top: 4875px; 
-	 position: absolute; 
-	 width: 242px;
-	 height: 71px;
-	 z-index:108;
-} 
+	left: 894px; 
+	top: 4875px; 
+	position: absolute; 
+	width: 242px;
+	height: 71px;
+	z-index:108;
+}  
