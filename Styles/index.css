@@ -97,28 +97,52 @@ body {
 	z-index: 108;
 }
 #ukflag { 
-	left: 965px; 
+	right: 205px;
 	top: 25px; 
 	position: absolute; 
 	width: 48px;
-	height: 36px;
-	z-index:113;
+	height: 35px;
+	z-index:100;
 } 
- #deflag { 
-	left: 1038px; 
-	top: 24px; 
-	position: absolute; 
-	width: 48px;
-	height: 37px;
-	z-index:114;
-} 
- #bgflag { 
-	left: 1107px; 
+#deflag { 
+       right: 135px;
 	top: 25px; 
 	position: absolute; 
 	width: 48px;
-	height: 36px;
-	z-index:115;
+	height: 35px;
+	z-index:100;
 } 
-
-
+#bgflag { 
+	right: 65px; 
+	top: 25px; 
+	position: absolute; 
+	width: 48px;
+	height: 35px;
+	z-index:100;
+} 
+#searchbar {
+       position: absolute;
+       top: 80px;
+       right: 45px;
+       z-index: 100;
+}
+#searchbar input[type=text] {
+       border-color: grey;
+       border-width: 1px;
+       width: 87%;
+       padding: 3px;
+       font-size: 17px;
+       background-color: #ddd;
+       border-radius: 15px;
+}
+#searchbar input[type=text]:hover {
+       background-color: #ddd;
+}
+.fa-search {
+       position: absolute;
+       right: 10px; /* Adjust right padding for positioning */
+       top: 50%;
+       transform: translateY(-50%);
+       font-size: 18px;
+       color: #ccc; /* Adjust color */
+   }
