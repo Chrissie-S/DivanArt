@@ -44,7 +44,7 @@ body {
        position: absolute; 
        width: 80%; 
        height: 90px;
-       z-index: 4;
+       z-index: 1;
        text-align: right; 
 }
 #navbar1 ul {
@@ -58,11 +58,11 @@ body {
 }
 #navbar1 ul li a {
        text-decoration: none;
-       color: #53413f;
-       font-size: 27px;
-       font-family: 'Gill Sans', serif;
-       font-weight: 600;
-       text-transform: lowercase; 
+       color: #42210b;
+       font-size: 23px;
+       font-family: "Poppins", sans-serif;
+       font-weight: 500; 
+       font-style: normal;
 }
 #navbar2 { 
        left: 0px; 
@@ -86,7 +86,7 @@ body {
 	position: absolute; 
 	width: 636px;
 	height: 53px;
-	z-index: 16;
+	z-index: 1;
 }
 #ukflag { 
 	right: 205px;
@@ -132,11 +132,11 @@ body {
 }
 #searchbar span {
        position: absolute;
-       right: 25px; /* Adjust left padding */
+       right: 25px;
        top: 50%;
        transform: translateY(-50%);
-       width: 20px; /* Adjust icon width */
-       height: 20px; /* Adjust icon height */
-       background-size: cover; /* Scale icon to fit */
-       background-color: #ddd; /* Adjust color to a darker shade */
+       width: 20px;
+       height: 20px;
+       background-size: cover; 
+       background-color: #ddd;
    }
