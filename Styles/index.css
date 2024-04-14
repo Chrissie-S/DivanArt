@@ -58,7 +58,7 @@ body {
 }
 #navbar1 ul li a {
        text-decoration: none;
-       color: rgb(65, 37, 37);
+       color: #53413f;
        font-size: 27px;
        font-family: 'Gill Sans', serif;
        font-weight: 600;
@@ -87,14 +87,6 @@ body {
 	width: 636px;
 	height: 53px;
 	z-index: 16;
-} 
-#logo2 { 
-	left: 894px; 
-	top: 4875px; 
-	position: absolute; 
-	width: 242px;
-	height: 71px;
-	z-index: 108;
 }
 #ukflag { 
 	right: 205px;
@@ -102,7 +94,7 @@ body {
 	position: absolute; 
 	width: 48px;
 	height: 35px;
-	z-index:100;
+	z-index: 10;
 } 
 #deflag { 
        right: 135px;
@@ -110,7 +102,7 @@ body {
 	position: absolute; 
 	width: 48px;
 	height: 35px;
-	z-index:100;
+	z-index: 10;
 } 
 #bgflag { 
 	right: 65px; 
@@ -118,7 +110,7 @@ body {
 	position: absolute; 
 	width: 48px;
 	height: 35px;
-	z-index:100;
+	z-index: 10;
 } 
 #searchbar {
        position: absolute;
@@ -138,11 +130,13 @@ body {
 #searchbar input[type=text]:hover {
        background-color: #ddd;
 }
-.fa-search {
+#searchbar span {
        position: absolute;
-       right: 10px; /* Adjust right padding for positioning */
+       right: 25px; /* Adjust left padding */
        top: 50%;
        transform: translateY(-50%);
-       font-size: 18px;
-       color: #ccc; /* Adjust color */
+       width: 20px; /* Adjust icon width */
+       height: 20px; /* Adjust icon height */
+       background-size: cover; /* Scale icon to fit */
+       background-color: #ddd; /* Adjust color to a darker shade */
    }
