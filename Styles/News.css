@@ -1,6 +1,7 @@
 body {
         margin: 0;
         padding: 0;
+        font-family: "Poppins", sans-serif;
 }
 #background { 
         left: 0px; 
@@ -8,42 +9,57 @@ body {
         position: relative; 
         margin-left: auto; 
         margin-right: auto; 
-        width: 1161px;
-        height: 633px; 
+        width: 1224px;
+        height: 750px; 
         overflow: hidden;
         z-index:0;
 } 
 h1 {
         color: orange;
+        font-size: 45px;
+        margin-left: 470px;
+        font-weight: 500;
+        margin-bottom: 20px;
 }
-.news {
+.container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-}
-        .news-item {
-        display: flex;
-        flex-direction: column; 
         justify-content: space-between;
-        align-items: center; 
-        width: 30%;
-        padding: 5px;
+        align-items: center;
+        max-width: 1000px;
+        margin-left: 400px;
+        padding: 0 50px;
 }
-        .news-item img {
-        width: 50%;
+.news-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 -100px;
+        padding: 45px; 
 }
-        .news-item h2, .news-item p {
-        font-family: "popins", sans-serif;
+.news-item img {
+        width: 65%;
+}
+.news-item h2 {
+        color: #42210b;
+        font-variant: small-caps;
+        margin: 5px 0;
+        font-size: 26px;
+        font-weight: 600;
+        text-align: left;
+        width: 65%;
+}
+.news-item p {
         color: #42210b;
         margin: 10px 0;
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
-        width: 50%;
+        width: 65%;  
 }
-        .news-item a {
+.news-item a {
         color: #42210b;
         text-align: right;
         text-decoration: none;
-        font-size: 20px;
-        width: 50%;
+        font-size: 18px;
+        width: 65%;
+        font-weight: 600;
 }
