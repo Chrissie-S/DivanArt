@@ -2,41 +2,46 @@ body {
         margin: 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
-}
-#background { 
-        left: 0px; 
-        top: 0px; 
-        position: relative; 
-        margin-left: auto; 
-        margin-right: auto; 
-        width: 1224px;
-        height: 700px; 
-        overflow: hidden;
-        z-index:0;
 } 
 #news {
         background-image: url(../Images/site-background.png);
+        background-size: contain;
+        width: 1224px;
+        height: 650px; 
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+}
+.transition {
+        position: absolute;
+        top: 10;
+        width: 1224px;
+        height: 50px;
+        background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
 }
 h1 {
         color: orange;
         font-size: 45px;
-        margin-left: 470px;
+        margin-left: 90px;
+        margin-bottom: 50px;
         font-weight: 500;
 }
 .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1100px;
-        margin-left: 400px;
+        max-width: 1140px;
+        height: auto;
+        padding-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
 }
 .news-item {
         display: flex;
         align-items: center;
         flex-direction: column;
         margin: 0 -100px;
-        padding: 60px; 
+        padding: 50px; 
 }
 .news-item img {
         width: 70%;
@@ -54,7 +59,7 @@ h1 {
         color: #42210b;
         margin: 25px 0;
         font-size: 18px;
-        text-align: left;
+        text-align: justify;
         width: 70%;  
 }
 .news-item a {

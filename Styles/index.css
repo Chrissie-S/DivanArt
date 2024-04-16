@@ -9,13 +9,11 @@ body {
        margin-left: auto; 
        margin-right: auto; 
        width: 1224px;
-       height: 800px; 
+       height: 700px; 
        overflow: hidden;
        z-index: 0;
 } 
-#home1 { 
-       left: -168px; 
-       top: -2px; 
+#home1 {  
        position: absolute; 
        width: 1224px;
        height: 705px;
@@ -61,9 +59,14 @@ body {
        color: #42210b;
        font-size: 23px;
        font-family: "Poppins", sans-serif;
-       font-weight: 500; 
+       font-weight: 600; 
        font-style: normal;
+       font-variant: small-caps;
 }
+#navbar1 ul li a:hover {
+       color: rgb(158, 109, 49);
+       font-size: 26px;
+     }
 #navbar2 { 
        left: 0px; 
        top: 138px; 
