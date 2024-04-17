@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lustria";
 } 
 #aboutus {
     background-image: url(../Images/site-background.png);
@@ -12,7 +12,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.transition {
+#aboutus .transition {
     position: absolute;
     top: 10;
     width: 1224px;
@@ -42,6 +42,9 @@ body {
     width: 100%;
     border-radius: 5% 5%;
 }
+.team img:hover {
+    transform: scale(1.1);
+  }
 .team .title-overlay {
     position: absolute;
     bottom: 0;
@@ -59,15 +62,18 @@ body {
   }
   .title-overlay > h3 {
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 21px;
     font-style: italic;
+    text-align: center;
     margin: 5px 15px -7px;
-    text-shadow: 1px 1px 2px #42210b;
+    text-shadow: 2px 2px 2px #ff6600;
+    letter-spacing: 1px;
   }
   .title-overlay > h2 {
     color: white;
     font-weight: 400;
+    text-align: right;
     font-size: 18px;
     margin: 5px 15px;
     text-shadow: 1px 1px 2px #42210b;
