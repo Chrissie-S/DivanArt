@@ -19,9 +19,9 @@ body {
         height: 50px;
         background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
 }
-h1 {
+.news > h1 {
         color: orange;
-        font-size: 45px;
+        font-size: 50px;
         margin-left: 90px;
         margin-bottom: 50px;
         font-weight: 500;
@@ -45,11 +45,16 @@ h1 {
 }
 .news-item img {
         width: 70%;
+        border-radius: 25% 25%;
 }
+.news-item img:hover {
+        transform: scale(1.18);
+        z-index: 1;
+      }
 .news-item h2 {
         color: #42210b;
         font-variant: small-caps;
-        margin: 5px;
+        margin: 10px;
         font-size: 26px;
         font-weight: 600;
         text-align: left;
