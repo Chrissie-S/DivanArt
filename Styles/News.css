@@ -19,7 +19,7 @@ body {
         height: 50px;
         background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
 }
-.news > h1 {
+#news > h1 {
         color: orange;
         font-size: 50px;
         margin-left: 90px;
