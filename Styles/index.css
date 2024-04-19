@@ -3,100 +3,66 @@ body {
        padding: 0;
 } 
 #background { 
-       left: 0px; 
-       top: 0px; 
        position: relative; 
        margin-left: auto; 
        margin-right: auto; 
        width: 1224px;
-       height: 700px; 
+       height: 680px; 
        overflow: hidden;
        z-index: 0;
 } 
 #home1 {  
        position: absolute; 
-       width: 1224px;
-       height: 705px;
        z-index: 1;
-} 
-#nav1 { 
-       left: -5px; 
-       top: -1px; 
-       position: absolute; 
-       width: 1224px;
-       height: 229px;
-       z-index: 2;
-} 
-#nav2 { 
-       left: 350px; 
-       top: -18px; 
-       position: absolute; 
-       width: 1224px;
-       height: 229px;
-       z-index: 3;
-} 
+}
 #navbar1 { 
-       left: 0;
-       top: 138px; 
-       right: 0;
+       top: 80px; 
        position: absolute; 
-       width: 80%; 
-       height: 90px;
+       width: 83%; 
        z-index: 1;
-       text-align: right; 
+       text-align: right;
 }
 #navbar1 ul {
        list-style: none;
-       padding: 0;
-       margin: 30px;
+       margin-top: 26px;
+       margin-right: 35px;
 }
 #navbar1 ul li {
        display: inline-block;
-       margin-left: 20px;
+       margin-left: 25px;
 }
 #navbar1 ul li a {
        text-decoration: none;
-       color: #42210b;
+       color: #25242a;
        font-size: 26px;
-       font-family: "Poppins", sans-serif;
-       font-weight: 500; 
+       font-family: "Kurale";
+       font-weight: 600; 
        font-style: normal;
        font-variant: small-caps;
        transition: font-size 0.2s ease;
 }
 #navbar1 ul li a:hover {
-       color: rgb(158, 109, 49);
+       color: white;
        font-size: 30px;
        font-weight: 700;
        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-     }
-#navbar2 { 
-       left: 0px; 
-       top: 138px; 
-       position: absolute; 
-       width: auto;
-       height: 90px;
-       z-index: 5;
-} 
+}
 #logo { 
-	left: 75px; 
-	top: 19px; 
+	left: 15px; 
+	top: 65px; 
 	position: absolute; 
-	width: 209px;
-	height: 192px;
-	z-index: 11;
+	z-index: 10;
 } 
-#wemakeart { 
-	left: 296px; 
-	top: 588px; 
+#wemakeart {  
+	left: 15px; 
+	top: 20px; 
+       width: auto;
 	position: absolute; 
-	width: 636px;
-	height: 53px;
-	z-index: 1;
+	z-index: 11;
 }
 #ukflag { 
 	right: 205px;
-	top: 25px; 
+	top: 20px; 
 	position: absolute; 
 	width: 48px;
 	height: 35px;
@@ -104,7 +70,7 @@ body {
 } 
 #deflag { 
        right: 135px;
-	top: 25px; 
+	top: 20px; 
 	position: absolute; 
 	width: 48px;
 	height: 35px;
@@ -112,7 +78,7 @@ body {
 } 
 #bgflag { 
 	right: 65px; 
-	top: 25px; 
+	top: 20px; 
 	position: absolute; 
 	width: 48px;
 	height: 35px;
@@ -120,7 +86,7 @@ body {
 } 
 #searchbar {
        position: absolute;
-       top: 80px;
+       top: 70px;
        right: 45px;
        z-index: 100;
 }

@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kurale";
+} 
+#services {
+    background-image: url(../Images/site-background.png);
+    background-size: contain;
+    width: 1224px;
+    height: 500px; 
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services-transition {
+    position: absolute;
+    top: 10;
+    width: 1224px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
+}
+#services > h1 {
+    color: orange;
+    font-size: 50px;
+    margin-left: 90px;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.products img {
+    width: 100%;
+    border-radius: 50%;
+    border-style: solid 2px black;
+    align-items:center;
+}
+.products img:hover {
+    transform: scale(2);
+  }
+.product-title {
+    color: inherit;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+/* .products:hover .title-overlay { 
+    opacity: 0;
+  }*/
+  .product-title > h3 {
+    color: rgb(61, 18, 18);
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+    margin: 0 0 0 0px;
+    letter-spacing: 1px;
+  }
