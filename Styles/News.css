@@ -4,10 +4,10 @@ body {
         font-family: "Lumanosimo";
 } 
 #news {
-        background-image: url(../Images/site-background.png);
+        background-image: url(../Images/Site-background.png);
         background-size: contain;
         width: 1224px;
-        height: 750px; 
+        height: 730px; 
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
@@ -24,7 +24,7 @@ body {
         font-size: 50px;
         margin-left: 90px;
         margin-bottom: 20px;
-        font-weight: 500;
+        font-weight: 600;
 }
 .news-container {
         display: flex;
@@ -41,17 +41,16 @@ body {
         align-items: center;
         flex-direction: column;
         margin: 0 -100px;
-        padding: 50px; 
+        padding: 50px;
 }
 .news-item img {
         width: 70%;
         border-radius: 20% 0%;
-        rotate: -3deg;
 }
 .news-item img:hover {
         transform: scale(1.18);
         z-index: 1;
-      }
+}
 .news-item h2 {
         color: #42210b;
         font-variant: small-caps;
@@ -63,10 +62,9 @@ body {
 }
 .news-item p {
         color: #42210b;
-        margin: 25px 0;
         font-size: 18px;
         text-align: justify;
-        width: 70%;  
+        width: 70%;
 }
 .news-item a {
         color: #42210b;

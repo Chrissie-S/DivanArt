@@ -4,7 +4,7 @@ body {
     font-family: "Kurale";
 } 
 #services {
-    background-image: url(../Images/site-background.png);
+    background-image: url(../Images/Site-background.png);
     background-size: contain;
     width: 1224px;
     height: 500px; 
@@ -24,7 +24,7 @@ body {
     font-size: 50px;
     margin-left: 90px;
     margin-top: 50px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .services-container {
     display: flex;

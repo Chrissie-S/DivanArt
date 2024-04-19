@@ -15,23 +15,23 @@ body {
        position: absolute; 
        z-index: 1;
 }
-#navbar1 { 
+#menu { 
        top: 80px; 
        position: absolute; 
        width: 83%; 
        z-index: 1;
        text-align: right;
 }
-#navbar1 ul {
+#menu ul {
        list-style: none;
        margin-top: 26px;
        margin-right: 35px;
 }
-#navbar1 ul li {
+#menu ul li {
        display: inline-block;
        margin-left: 25px;
 }
-#navbar1 ul li a {
+#menu ul li a {
        text-decoration: none;
        color: #25242a;
        font-size: 26px;
@@ -41,7 +41,7 @@ body {
        font-variant: small-caps;
        transition: font-size 0.2s ease;
 }
-#navbar1 ul li a:hover {
+#menu ul li a:hover {
        color: white;
        font-size: 30px;
        font-weight: 700;
@@ -49,13 +49,13 @@ body {
 }
 #logo { 
 	left: 15px; 
-	top: 65px; 
+	top: 40px; 
 	position: absolute; 
 	z-index: 10;
 } 
 #wemakeart {  
-	left: 15px; 
-	top: 20px; 
+	left: 50px; 
+	top: 25px; 
        width: auto;
 	position: absolute; 
 	z-index: 11;
@@ -64,24 +64,24 @@ body {
 	right: 205px;
 	top: 20px; 
 	position: absolute; 
-	width: 48px;
-	height: 35px;
+	width: 45px;
+	height: 34px;
 	z-index: 10;
 } 
 #deflag { 
        right: 135px;
 	top: 20px; 
 	position: absolute; 
-	width: 48px;
-	height: 35px;
+	width: 45px;
+	height: 34px;
 	z-index: 10;
 } 
 #bgflag { 
 	right: 65px; 
 	top: 20px; 
 	position: absolute; 
-	width: 48px;
-	height: 35px;
+	width: 45px;
+	height: 34px;
 	z-index: 10;
 } 
 #searchbar {
