@@ -24,16 +24,15 @@ body {
 }
 #menu ul {
        list-style: none;
-       margin-top: 26px;
+       margin-top: 25px;
        margin-right: 35px;
 }
 #menu ul li {
        display: inline-block;
-       margin-left: 25px;
 }
 #menu ul li a {
        text-decoration: none;
-       color: #25242a;
+       color: rgb(23, 23, 44);
        font-size: 26px;
        font-family: "Kurale";
        font-weight: 600; 
@@ -47,47 +46,57 @@ body {
        font-weight: 700;
        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+.separator {
+       width: 2px; 
+       height: 20px;
+       background-color: rgb(23, 23, 44);
+       margin-bottom: -4px;
+       margin-left: 10px;
+       margin-right: 10px;
+}
 #logo { 
 	left: 15px; 
-	top: 40px; 
+	top: 45px; 
 	position: absolute; 
 	z-index: 10;
+       opacity: 0.7;
 } 
 #wemakeart {  
 	left: 50px; 
-	top: 25px; 
+	top: 30px; 
        width: auto;
 	position: absolute; 
 	z-index: 11;
+       opacity: 0.7;
 }
 #ukflag { 
-	right: 205px;
-	top: 20px; 
+	right: 150px;
+	top: 30px; 
 	position: absolute; 
-	width: 45px;
-	height: 34px;
+	width: 40px;
+	height: 27px;
 	z-index: 10;
 } 
 #deflag { 
-       right: 135px;
-	top: 20px; 
+       right: 85px;
+	top: 30px; 
 	position: absolute; 
-	width: 45px;
-	height: 34px;
+	width: 40px;
+	height: 27px;
 	z-index: 10;
 } 
 #bgflag { 
-	right: 65px; 
-	top: 20px; 
+	right: 20px; 
+	top: 30px; 
 	position: absolute; 
-	width: 45px;
-	height: 34px;
+	width: 40px;
+	height: 27px;
 	z-index: 10;
 } 
 #searchbar {
        position: absolute;
-       top: 70px;
-       right: 45px;
+       top: 30px;
+       right: 200px;
        z-index: 100;
 }
 #searchbar input[type=text] {
