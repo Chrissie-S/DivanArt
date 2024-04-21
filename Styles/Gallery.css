@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kurale";
+} 
+#gallery {
+    background-image: url(../Images/Site-background.png);
+    background-size: contain;
+    width: 1224px;
+    height: 1300px; 
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery-transition {
+    position: absolute;
+    top: 10;
+    width: 1224px;
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
+}
+#gallery > h1 {
+    color: orange;
+    font-size: 50px;
+    margin-left: 90px;
+    margin-top: 38px;
+    font-weight: 600;
+}
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin-left: 50px;
+}
+.gallery-row img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 55px;
+    border-style: solid;
+    border-color: rgb(172, 171, 171);
+    border-radius: 10%;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+}
+.gallery-row img:hover {
+    transform: scale(1.5) rotateY(180deg);
+    filter: brightness(1.1) saturate(1.0) contrast(1.1);
+    backface-visibility: visible;
+    transition: transform 0.5s ease-in-out;
+}

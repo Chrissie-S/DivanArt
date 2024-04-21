@@ -62,7 +62,7 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-/* .products:hover .title-overlay { 
+/* .products:hover .title-overlay {  
     opacity: 0;
   }*/
   .product-title > h3 {
