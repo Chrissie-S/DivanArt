@@ -10,6 +10,7 @@ body {
         background-attachment: inherit;
         position: relative;  
         height: 100svh; 
+        width: 100svw;
 }
 .news-transition { 
         position: relative;
