@@ -5,38 +5,36 @@ body {
 } 
 #gallery {
     background-image: url(../Images/Site-background.png);
-    background-size: contain;
-    width: 1224px;
-    height: 1300px; 
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+    background-size: 100svw 200svh;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    position: relative; 
 }
 .gallery-transition {
-    position: absolute;
-    top: 10;
-    width: 1224px;
-    height: 50px;
+    position: relative;
+    width: 100%;
+    height: 100px;
     background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
 }
 #gallery > h1 {
-    color: orange;
+    color: #a88057;
     font-size: 50px;
-    margin-left: 90px;
-    margin-top: 38px;
+    padding-left: 100px;
+    margin-top: -30px;
     font-weight: 600;
 }
 .gallery-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
-    margin-left: 50px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .gallery-row img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 55px;
+    width: 230px;
+    height: 230px;
+    margin-bottom: 60px;
     border-style: solid;
     border-color: rgb(172, 171, 171);
     border-radius: 10%;

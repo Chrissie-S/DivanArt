@@ -5,34 +5,33 @@ body {
 } 
 #about {
     background-image: url(../Images/Site-background.png);
-    background-size: contain;
-    width: 1224px;
-    height: 630px; 
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+    background-size: 100svw 100svh;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    position: relative; 
+    height: 100svh; 
 }
 .about-transition {
-    position: absolute;
-    top: 10;
-    width: 1224px;
-    height: 50px;
+    position: relative;
+    width: 100%;
+    height: 100px;
     background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
 }
 #about > h1 {
-    color: orange;
+    color: #a88057;
     font-size: 50px;
-    margin-left: 90px;
-    margin-top: 40px;
+    padding-left: 100px;
+    margin-top: -30px;
     font-weight: 600;
 }
 .about-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    margin-left: 50px;
-    margin-right: 50px;
+    height: auto;   
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
 }
 .team {
@@ -42,21 +41,20 @@ body {
     position: relative;
 }
 .team img {
-    filter: grayscale(0.7) brightness(1.0);
+    /* filter: grayscale(0.7) brightness(1.0); */
     width: 100%;
-    border-radius: 50% 0% 50% 0%;
-    border-style:groove;
+    border-radius: 30% 0%;
+    border-style: solid;
     border-color: rgb(180, 179, 179);
-    border-width: 1px;
+    border-width: 2px;
+    padding: 10px;
 }
 .name {
-    position: absolute;
-    margin-top: -65px;
+    position: relative;
     width: 100%;
     height: 20%;
     background-color: rgba(2, 3, 17, 0.6);
     transition: opacity 0.4s ease;
-    display: flex;
     justify-content: center;
     flex-direction: column;
     opacity: 1;
@@ -75,6 +73,7 @@ body {
     filter: grayscale(2.0) brightness(1.0);
     position: absolute;
     flex-direction: column;
+    justify-content: center;
     display: flex;
     margin-left: 5px;
     opacity: 1;
