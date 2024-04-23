@@ -5,12 +5,12 @@ body {
 } 
 #news {
         background-image: url(../Images/Site-background.png);
-        background-size: cover;
+        background-size: 100svw 100svh;
         background-repeat: no-repeat;
         background-attachment: inherit;
         position: relative;  
-        height: 100vh; 
-        width: 100vw;
+        height: 100svh; 
+        width: 100svw;
 }
 .news-transition { 
         position: relative;
