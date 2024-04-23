@@ -55,3 +55,15 @@ body {
     backface-visibility: visible;
     transition: transform 0.5s ease-in-out;
 }
+.gallery-separator {
+    background-color:#a88057;
+    border-radius: 50%;
+    border: none;
+    width: 205px;
+    height: 7px;
+    align-items: left;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
