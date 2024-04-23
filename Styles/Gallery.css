@@ -5,14 +5,16 @@ body {
 } 
 #gallery {
     background-image: url(../Images/Site-background.png);
-    background-size: 100svw 200svh;
+    background-size: 100svw auto;
     background-repeat: no-repeat;
     background-attachment: inherit;
     position: relative; 
+    height: auto; 
+    width: 100svw;
 }
 .gallery-transition {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100px;
     background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
 }
@@ -27,19 +29,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
+    height: auto;   
+    width: 85svw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 70px;
+}
+.gallery-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 .gallery-row img {
-    width: 230px;
-    height: 230px;
-    margin-bottom: 60px;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 70px;
     border-style: solid;
-    border-color: rgb(172, 171, 171);
-    border-radius: 10%;
-    border-right-width: 10px;
-    border-bottom-width: 10px;
+    border-color: rgb(201, 199, 199);
+    border-radius: 3%;
+    border-width: 15px;
 }
 .gallery-row img:hover {
     transform: scale(1.5) rotateY(180deg);

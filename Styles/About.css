@@ -10,10 +10,11 @@ body {
     background-attachment: inherit;
     position: relative; 
     height: 100svh; 
+    width: 100svw;
 }
 .about-transition {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100px;
     background-image: linear-gradient(to bottom, rgb(163, 163, 163) 4%, transparent 100%);
 }
@@ -29,10 +30,10 @@ body {
     justify-content: space-between;
     align-items: center;
     height: auto;   
-    width: 1500px;
+    width: 80svw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .team {
     display: flex;
@@ -42,7 +43,6 @@ body {
 }
 .team img {
     /* filter: grayscale(0.7) brightness(1.0); */
-    width: 100%;
     border-radius: 30% 0%;
     border-style: solid;
     border-color: rgb(180, 179, 179);
