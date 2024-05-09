@@ -5,11 +5,11 @@ body {
 } 
 #contacts {
     background-image: url(../Images/Site-background.png);
-    background-size: 100svw 100svh;
+    background-size: 100svw auto;
     background-repeat: no-repeat;
     background-attachment: inherit;
     position: relative;  
-    height: 100svh; 
+    height: auto; 
     width: 100svw;
 }
 .contacts-transition { 
@@ -46,19 +46,93 @@ body {
     margin-right: auto;
 }
 .contacts-address-wrapper {
-    width: 45%;
+    width: 65%;
+    margin-left: 70px;
 }
 .contacts-address {
     font-size: 20px;
     line-height: 2em;
-    margin-top: 30px;
-    margin-bottom: 230px;
-    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+.contacts-email {
+    font-size: 20px;
+    line-height: 2em;
 }
 .contacts-map {
-    align-self: flex-start;
-    margin-top: -745px;
-    margin-right: -350px;
-    margin-left: auto;
-    width: 70%;
+    margin-top: -470px;
+    margin-left: 450px;
+}
+#footer-container {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer-menu {
+    text-align: center;
+    background-color: #a88057;
+    margin-top: 100px;
+}
+#footer-menu ul {
+    list-style: none;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#footer-menu ul li {
+    display: inline;
+    margin-right: 50px;
+}
+#footer-menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.9em;
+    font-weight: 600; 
+    font-style: normal;
+    font-variant: small-caps;
+    transition: font-size 0.2s ease;
+}
+#footer-menu ul li a:hover {
+    color: #3a2108;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#footer-background {
+    position: relative;
+    background-color: #3a2108;
+    height: 150px;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 0;
+}
+.footer-logo {
+    position: absolute;
+    margin-top: 40px; 
+    right: 0; 
+    margin-right: 150px;
+    z-index: 1; 
+}
+#footer-icons {
+    position: absolute;
+    padding-top: 40px;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 15px;
+    display: flex;
+}
+.footer-icon {
+    margin-right: 30px;
+}
+.homeicon {
+    margin-bottom: -20px;
+}
+.emailicon {
+    margin-bottom: 5px;
+}
+.mapicon {
+    margin-bottom: -5px;
+    margin-left: -15px;
 }
