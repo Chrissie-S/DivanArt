@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: inherit;
     position: relative; 
+    background-size: cover; 
     height: auto; 
     width: 100svw;
 }
