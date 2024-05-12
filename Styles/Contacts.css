@@ -121,6 +121,10 @@ body {
     margin-left: 150px;
     display: flex;
 }
+.footer-icon a:hover {
+    opacity: 0.5;
+    font-size: large;
+}
 .footer-icon {
     margin-right: 30px;
 }
