@@ -19,7 +19,7 @@ body {
 }
 #news > h1 {
         color: #a88057;
-        font-size: 50px;
+        font-size: 2.7vw;
         padding-left: 100px;
         margin-top: 0px;
         font-weight: 600;
@@ -55,14 +55,14 @@ body {
         color: #42210b;
         font-variant: small-caps;
         margin: 10px;
-        font-size: 26px;
+        font-size: 1.3vw;
         font-weight: 600;
         text-align: left;
         width: 95%;
 }
 .news-article p {
         color: #42210b;
-        font-size: 18px;
+        font-size: 0.95vw;
         text-align: justify;
         width: 95%;
 }

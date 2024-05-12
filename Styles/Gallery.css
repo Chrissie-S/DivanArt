@@ -20,7 +20,7 @@ body {
 }
 #gallery > h1 {
     color: #a88057;
-    font-size: 50px;
+    font-size: 2.7vw;
     padding-left: 100px;
     margin-top: -30px;
     font-weight: 600;
@@ -45,10 +45,10 @@ body {
     width: 270px;
     height: 270px;
     margin-bottom: 70px;
-    border-style: solid;
-    border-color: rgb(201, 199, 199);
-    border-radius: 3%;
-    border-width: 15px;
+    border-style:ridge;
+    border-color: rgba(199, 199, 199, 0.5);
+    border-radius: 10%;
+    border-width: 20px;
 }
 .gallery-row img:hover {
     transform: scale(1.5) rotateY(180deg);
