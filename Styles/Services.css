@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: inherit;
     position: relative; 
-    height: 100svh;
+    height: 80svh;
     width: 100svw; 
 }
 .services-transition {
@@ -39,38 +39,26 @@ body {
     align-items: center;
     flex-direction: column;
     position: relative;
-}
-.products img {
-    width: 100%;
+    width: 13%;
+    padding-top: 15px;
+    margin-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 50%;
-    border-width: 5px black;
-    align-items: center;
-    margin-bottom: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dad9d9;
+    background-color: rgba(165, 165, 165, 0.2);
+    justify-content: space-between;
 }
-.products img:hover {
-    transform: scale(2);
-}
-.product-title {
-    color: inherit;
-    position: absolute;
-    bottom: -30px;
+.product-title > h3 {
+    position: relative;
+    margin-top: 15px;
     width: 100%;
-    opacity: 1;
-    transition: opacity 0.4s ease;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-/* .products:hover .title-overlay {  
-    opacity: 0;
-  }*/
-  .product-title > h3 {
-    color: rgb(61, 18, 18);
-    font-weight: 600;
-    font-size: 21px;
-    text-align: center;
-    margin: 0 0 0 0px;
-    letter-spacing: 1px;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    color: #42210b;
+    font-variant: small-caps;
 }
 .services-separator {
     background-color:#a88057;

@@ -48,7 +48,7 @@ body {
     position: absolute;
     margin-top: 285px;
     width: 100%;
-    height: 15%;
+    height: 16%;
     background-color: rgba(58, 15, 15, 0.6);
     transition: opacity 0.5s ease;
     opacity: 0;
@@ -63,12 +63,13 @@ body {
     margin: 0px;
     justify-content: space-between;
     color: white;
+    font-style: oblique;
 }
 .social-icons {
     position: absolute;
     display: flex;
     margin-left: 15px;
-    margin-top: 17px;
+    margin-top: 15px;
 }
 .icons {
     margin-right: 15px;

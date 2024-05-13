@@ -33,7 +33,7 @@ body {
     width: 85svw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 .gallery-row {
     display: flex;
@@ -42,13 +42,16 @@ body {
     position: relative;
 }
 .gallery-row img {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
     margin-bottom: 70px;
-    border-style:ridge;
-    border-color: rgba(199, 199, 199, 0.5);
+    border-style: solid;
+    border-color: rgba(199, 199, 199, 0.6);
     border-radius: 10%;
-    border-width: 20px;
+    border-left-width: 25px;
+    border-right-width: 25px;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
 }
 .gallery-row img:hover {
     transform: scale(1.5) rotateY(180deg);
