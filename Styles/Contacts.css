@@ -39,7 +39,8 @@ body {
 #contacts-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     height: auto;   
     width: 90svw;
     margin-top: 80px;
@@ -47,21 +48,24 @@ body {
     margin-right: auto;
 }
 .contacts-address-wrapper {
-    width: 65%;
-    margin-left: 70px;
+    width: 50%;
 }
 .contacts-address {
-    font-size: 20px;
-    line-height: 2em;
-    margin-bottom: 200px;
+    font-size: 1vw;
+    line-height: 1.8em;
+    margin-bottom: 250px;
+    margin-right: 450px;
 }
 .contacts-email {
-    font-size: 20px;
-    line-height: 2em;
+    font-size: 1vw;
+    margin-right: 450px;
+}
+.contacts-email a {
+    text-decoration: none;
 }
 .contacts-map {
-    margin-top: -470px;
-    margin-left: 450px;
+    margin-top: -520px;
+    margin-left: 550px;
 }
 #footer-container {
     position: relative;
@@ -135,6 +139,6 @@ body {
     margin-bottom: 5px;
 }
 .mapicon {
-    margin-bottom: -5px;
-    margin-left: -15px;
+    margin-bottom: 5px;
+    margin-right: -370px;
 }
