@@ -49,17 +49,17 @@ body {
 .products {
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     position: relative;
-    width: 10%;
-    padding: 30px;
-    padding-bottom: 10px;
-    border-radius: 100%;
+    justify-content: space-between;
+    width: 15%;
+    padding-top: 20px;
+    border-radius: 50%;
     border-width: 1px;
     border-style: solid;
     border-color: #42210b;
-    background-color: rgba(88, 88, 88, 0.2);
-    justify-content: space-between;
+    background-color: rgba(136, 134, 134, 0.3);
 }
 .products a {
     text-decoration: none;
@@ -70,9 +70,10 @@ body {
 .product-title > h3 {
     position: relative;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
     width: 100%;
     font-size: 1.2vw;
     letter-spacing: 3px;
     color: #42210b;
     font-variant: small-caps;
+}
