@@ -54,19 +54,19 @@
     <div class="news-container">
         <div class="news-article">
             <img src="./Images/News1.png" alt="Andersen Line">
-            <h2>New Andersen Line</h2>
-            <p>The Anderson Line Sofa appears to levitate just above the floor, providing clean lines that accent its formal yet versatile nature.</p>
+            <h2>A new display in São Paulo</h2>
+            <p>A space that expresses an alchemy of architecture, furniture and decoration, exquisitely blending Italian and Brasilian elegance.</p>
             <a class="button" href="#">Read more >></a>
         </div>
         <div class="news-article">
             <img src="./Images/News2.png" alt="Outdoor Sofas">
-            <h2>Youthful Outdoor Sofas</h2>
-            <p>The elements are interspersed with wooden surfaces that feature trays or candle holders and can be arranged in various ways.</p>
+            <h2>Latest collection in Chicago</h2>
+            <p>A unique design venue in the city known for introducing modern architecture to the US, which offers an immersive experience.</p>
             <a class="button" href="#">Read more >></a>
         </div>
         <div class="news-article">
             <img src="./Images/News3.png" alt="Dordoni and Minotti Design">
-            <h2>Dordoni & Minotti Design</h2>
+            <h2>Harmonious Contrasts of Details</h2>
             <p>Alison Iroko Nature, a modular seating system with rigorous and formal lines, is characterised with a natural, unpainted finish.</p>
             <a class="button" href="#">Read more >></a>
         </div>
@@ -129,7 +129,7 @@
         <div class="products">
           <a href="#"><img src="./Images/Service-1.png" alt="service-1">
             <div class="product-title">
-              <h3>Lightning</h3>
+              <h3>Lighting</h3>
             </div>
           </a>
         </div>
@@ -164,37 +164,33 @@
     </div>
   </section>
 <!--GALLERY section--> 
-  <section id="gallery">
-    <div class="gallery-transition"></div>
-      <h1>GALLERY</h1>
-      <hr class="gallery-separator">
-      <div class="gallery-container">
-      <div class="gallery-row">
-      <img src="./Images/image1.png" alt="gallery">
-      <img src="./Images/image2.png" alt="gallery">
-      <img src="./Images/image3.png" alt="gallery">
-      <img src="./Images/image4.png" alt="gallery">
-      </div>
-      <div class="gallery-row">
-      <img src="./Images/image5.png" alt="gallery">
-      <img src="./Images/image6.png" alt="gallery">
-      <img src="./Images/image7.png" alt="gallery">
-      <img src="./Images/image8.png" alt="gallery">
-      </div>
-      <div class="gallery-row">
-      <img src="./Images/image9.png" alt="gallery">
-      <img src="./Images/image10.png" alt="gallery">
-      <img src="./Images/image11.png" alt="gallery">
-      <img src="./Images/image12.png" alt="gallery">
-      </div>
-      <div class="gallery-row">
-      <img src="./Images/image13.png" alt="gallery">
-      <img src="./Images/image14.png" alt="gallery">
-      <img src="./Images/image15.png" alt="gallery">
-      <img src="./Images/image16.png" alt="gallery">
-      </div>
-      </div>
-    </section>
+<section id="gallery">
+  <div class="gallery-transition"></div>
+  <h1>GALLERY</h1>
+  <hr class="gallery-separator">
+  <div class="gallery-container">
+    <div class="gallery-main">
+      <img id="main-image" src="./Images/image1.png" alt="gallery">
+    </div>
+    <div class="gallery-thumbnails">
+      <img class="thumbnail" src="./Images/image2.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image3.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image4.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image5.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image6.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image7.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image8.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image9.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image10.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image11.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image12.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image13.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image14.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image15.png" alt="gallery">
+      <img class="thumbnail" src="./Images/image16.png" alt="gallery">
+    </div>
+  </div>
+</section>
 <!--CONTACTS section--> 
 <section id="contacts">
   <div class="contacts-transition"></div>
@@ -257,5 +253,43 @@
     </div>
 </footer>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const mainImage = document.getElementById("main-image");
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    const images = [
+      "./Images/image1.png",
+      "./Images/image2.png",
+      "./Images/image3.png",
+      "./Images/image4.png",
+      "./Images/image5.png",
+      "./Images/image6.png",
+      "./Images/image7.png",
+      "./Images/image8.png",
+      "./Images/image9.png",
+      "./Images/image10.png",
+      "./Images/image11.png",
+      "./Images/image12.png",
+      "./Images/image13.png",
+      "./Images/image14.png",
+      "./Images/image15.png",
+      "./Images/image16.png"
+    ];
+    let currentIndex = 1;
+    function updateThumbnails() {
+      thumbnails.forEach((thumbnail, i) => {
+        const index = (currentIndex + i) % images.length;
+        thumbnail.src = images[index];
+      });
+    }
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      mainImage.src = images[currentIndex];
+      updateThumbnails();
+    }
+    updateThumbnails();
+    setInterval(nextImage, 3000);
+  });
+</script>
 </body>
 </html>
