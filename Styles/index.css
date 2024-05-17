@@ -66,46 +66,40 @@ body {
 }
 .logo, .slogan {
        animation: float-in 2.5s ease-in-out;
-     }   
-     @keyframes float-in {
-       0% {
-         opacity: 0;
-         transform: translateY(50%);
-       }
-       50% {
-         opacity: 0.5;
-         transform: translateY(50%);
-       }
-       100% {
-         opacity: 1;
-         transform: translateY(0);
-       }
+}   
+@keyframes float-in {
+0% {
+       opacity: 0;
+       transform: translateY(50%);
 }
-.ukflag { 
-	right: 150px;
-	top: 30px; 
-	position: absolute; 
-	width: 40px;
-	height: 27px;
-} 
-.deflag { 
-       right: 85px;
-	top: 30px; 
-	position: absolute; 
-	width: 40px;
-	height: 27px;
-} 
-.bgflag { 
-	right: 20px; 
-	top: 30px; 
-	position: absolute; 
-	width: 40px;
-	height: 27px;
-} 
+50% {
+       opacity: 0.5;
+       transform: translateY(50%);
+}
+100% {
+       opacity: 1;
+       transform: translateY(0);
+}
+}
+.flags-container { 
+       display: flex;
+       position: absolute;
+       gap: 25px;
+       right: 55px;
+	margin-top: 25px;  
+}
+.flag img {
+       border-radius: 50%;
+       opacity: 0.6;
+}
+.flag img:hover {
+       transform: scale(1.3);
+       opacity: 1;
+     }
 .searchbar {
        position: absolute;
-       top: 30px;
-       right: 250px;
+       top: 25px;
+       right: 260px;
        z-index: 100;
 }
 .searchbar input[type=text] {

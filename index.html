@@ -36,9 +36,11 @@
 		<img class="logo" src="./Images/VectorSmartObject.png" alt="logo">
     <img class="navbar1" src="./Images/Navbar1.png" alt="navbar1">
 		<h1 class="slogan">we make ART you live in</h1>
-    <div class="ukflag"><a href="#"><img src="./Images/UK.png" alt="UK"></a></div>
-		<div class="deflag"><a href="#"><img src="./Images/DE.png" alt="DE"></a></div>
-		<div class="bgflag"><a href="#"><img src="./Images/BG.png" alt="BG"></a></div>
+    <div class="flags-container">
+    <div class="flag"><a href="#"><img src="./Images/UK.png" alt="UK"></a></div>
+		<div class="flag"><a href="#"><img src="./Images/DE.png" alt="DE"></a></div>
+		<div class="flag"><a href="#"><img src="./Images/BG.png" alt="BG"></a></div>
+  </div>
     <div class="searchbar">
       <form action="#">
       <input type="text" placeholder="Search" name="search">
@@ -53,19 +55,22 @@
     <hr class="news-separator">
     <div class="news-container">
         <div class="news-article">
-            <img src="./Images/News1.png" alt="Andersen Line">
-            <h2>A new display in São Paulo</h2>
-            <p>A space that expresses an alchemy of architecture, furniture and decoration, exquisitely blending Italian and Brasilian elegance.</p>
+          <p>May | 2024</p>
+            <img src="./Images/News1.png" alt="Store in Prague">
+            <h2>A new store opens in Prague</h2>
+            <p>The store is located on the ground floor of a charming Neo-Renaissance style building designed by architect Karel Janda.</p>
             <a class="button" href="#">Read more >></a>
         </div>
         <div class="news-article">
-            <img src="./Images/News2.png" alt="Outdoor Sofas">
-            <h2>Latest collection in Chicago</h2>
+          <p>March | 2024</p>
+            <img src="./Images/News2.png" alt="Latest collection">
+            <h2>Latest collection has landed in Chicago</h2>
             <p>A unique design venue in the city known for introducing modern architecture to the US, which offers an immersive experience.</p>
             <a class="button" href="#">Read more >></a>
         </div>
         <div class="news-article">
-            <img src="./Images/News3.png" alt="Dordoni and Minotti Design">
+          <p>February | 2024</p>
+            <img src="./Images/News3.png" alt="Harmonious Contrasts">
             <h2>Harmonious Contrasts of Details</h2>
             <p>Alison Iroko Nature, a modular seating system with rigorous and formal lines, is characterised with a natural, unpainted finish.</p>
             <a class="button" href="#">Read more >></a>
@@ -258,22 +263,22 @@
     const mainImage = document.getElementById("main-image");
     const thumbnails = document.querySelectorAll(".thumbnail");
     const images = [
-      "./Images/image1.png",
-      "./Images/image2.png",
-      "./Images/image3.png",
-      "./Images/image4.png",
-      "./Images/image5.png",
-      "./Images/image6.png",
-      "./Images/image7.png",
-      "./Images/image8.png",
-      "./Images/image9.png",
-      "./Images/image10.png",
-      "./Images/image11.png",
-      "./Images/image12.png",
-      "./Images/image13.png",
-      "./Images/image14.png",
-      "./Images/image15.png",
-      "./Images/image16.png"
+    "./Images/image1.png",
+    "./Images/image2.png",
+    "./Images/image3.png",
+    "./Images/image4.png",
+    "./Images/image5.png",
+    "./Images/image6.png",
+    "./Images/image7.png",
+    "./Images/image8.png",
+    "./Images/image9.png",
+    "./Images/image10.png",
+    "./Images/image11.png",
+    "./Images/image12.png",
+    "./Images/image13.png",
+    "./Images/image14.png",
+    "./Images/image15.png",
+    "./Images/image16.png"
     ];
     let currentIndex = 1;
     function updateThumbnails() {

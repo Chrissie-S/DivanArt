@@ -5,11 +5,11 @@ body {
 } 
 #news {
         background-image: url(../Images/Site-background.png);
-        background-size: 100svw 100svh;
+        background-size: 100svw 110svh;
         background-repeat: no-repeat;
         background-attachment: inherit;
         position: relative;  
-        height: 100svh; 
+        height: 110svh; 
         width: 100svw;
 }
 .news-transition { 
@@ -55,12 +55,10 @@ body {
 }
 .news-article img {
         width: 470px;
-        border: 5px solid #b9b9b8;
         margin-bottom: 10px;
         border-radius: 5% 5% 5% 5%;
 }
 .news-article img:hover {
-        transform: scale(1.18);
         z-index: 1;
 }
 .news-article h2 {
@@ -83,7 +81,7 @@ body {
         color: #42210b;
         text-align: right;
         text-decoration: none;
-        font-size: 18px;
+        font-size: 1vw;
         width: 95%;
         font-weight: 600;
         display: inline;
@@ -99,7 +97,7 @@ a.button {
         display: flex;
         margin-left: auto;
         margin-right: 10px;
-      }
+}
 a.button:hover {
         background-color: #42210b;
 }
