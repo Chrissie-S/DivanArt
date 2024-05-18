@@ -90,12 +90,11 @@ body {
 }
 .flag img {
        border-radius: 50%;
-       opacity: 0.6;
 }
 .flag img:hover {
        transform: scale(1.3);
        opacity: 1;
-     }
+}
 .searchbar {
        position: absolute;
        top: 25px;
