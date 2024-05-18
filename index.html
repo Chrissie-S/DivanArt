@@ -194,25 +194,29 @@
   <h1>GALLERY</h1>
   <hr class="gallery-separator">
   <div class="gallery-container">
-    <div class="gallery-main">
-      <img id="main-image" src="./Images/image1.png" alt="gallery">
+    <div class="main-image">
+      <img id="mainImage" src="./Images/image1.png" alt="Main Image">
     </div>
-    <div class="gallery-thumbnails">
-      <img class="thumbnail" src="./Images/image2.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image3.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image4.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image5.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image6.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image7.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image8.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image9.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image10.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image11.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image12.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image13.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image14.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image15.png" alt="gallery">
-      <img class="thumbnail" src="./Images/image16.png" alt="gallery">
+    <div class="side-images left">
+      <img src="./Images/image2.png" alt="Side Image 2">
+      <img src="./Images/image3.png" alt="Side Image 3">
+      <img src="./Images/image4.png" alt="Side Image 4">
+    </div>
+    <div class="side-images right">
+      <img src="./Images/image5.png" alt="Side Image 5">
+      <img src="./Images/image6.png" alt="Bottom Image 6">
+      <img src="./Images/image7.png" alt="Bottom Image 7">
+    </div>
+    <div class="bottom-images">
+      <img src="./Images/image8.png" alt="Bottom Image 8">
+      <img src="./Images/image9.png" alt="Bottom Image 9">
+      <img src="./Images/image10.png" alt="Bottom Image 10">
+      <img src="./Images/image11.png" alt="Bottom Image 11">
+      <img src="./Images/image12.png" alt="Bottom Image 12">
+      <img src="./Images/image13.png" alt="Bottom Image 13">
+      <img src="./Images/image14.png" alt="Bottom Image 14">
+      <img src="./Images/image15.png" alt="Bottom Image 15">
+      <img src="./Images/image16.png" alt="Bottom Image 16">
     </div>
   </div>
   <nav id="footer-menu">
@@ -289,10 +293,9 @@
 </footer>
 </section>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const mainImage = document.getElementById("main-image");
-    const thumbnails = document.querySelectorAll(".thumbnail");
-    const images = [
+document.addEventListener('DOMContentLoaded', function() {
+  var mainImage = document.getElementById('mainImage');
+  var images = [
     "./Images/image1.png",
     "./Images/image2.png",
     "./Images/image3.png",
@@ -309,22 +312,15 @@
     "./Images/image14.png",
     "./Images/image15.png",
     "./Images/image16.png"
-    ];
-    let currentIndex = 1;
-    function updateThumbnails() {
-      thumbnails.forEach((thumbnail, i) => {
-        const index = (currentIndex + i) % images.length;
-        thumbnail.src = images[index];
-      });
-    }
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      mainImage.src = images[currentIndex];
-      updateThumbnails();
-    }
-    updateThumbnails();
-    setInterval(nextImage, 3000);
-  });
+  ];
+  var currentIndex = 0;
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    console.log(`Changing image to: ${images[currentIndex]}`);
+    mainImage.src = images[currentIndex];
+  }
+  setInterval(changeImage, 3000);
+});
 </script>
 </body>
 </html>

@@ -38,40 +38,52 @@ body {
     margin-top: -30px;
 }
 .gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90svw;
+    display: grid;
+    grid-template-areas: 
+      "left main right"
+      "bottom bottom bottom";
+    gap: 30px;
+    justify-items: center;
+    align-items: start;
     margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
 }
-.gallery-main {
+.main-image {
     position: relative;
-    margin: 40px 0;
+    border-right: #3a2108 solid 100px;
+    border-left: #3a2108 solid 100px;
+    border-top: #3a2108 solid 10px;
+    border-bottom: #3a2108 solid 10px;
 }
-.gallery-main img {
-    border-right: 100px solid #3a2108;
-    border-left: 100px solid #3a2108;
-    border-top: 10px solid #3a2108;
-    border-bottom: 10px solid #3a2108;
-    width: 900px;
+.main-image img {
+    display: block;
+    width: 950px; 
     height: 500px;
 }
-.gallery-thumbnails {
+.side-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.side-images.left {
+    grid-area: left;
+    margin-left: 230px;
+}
+.side-images.right {
+    grid-area: right;
+    margin-right: 230px;
+}
+.side-images img {
+    width: 100px; 
+    height: auto;
+}
+.bottom-images {
+    grid-area: bottom;
     display: flex;
     flex-wrap: wrap;
+    gap: 31px;
     justify-content: center;
-    gap: 10px;
-    border: 1px solid #3a2108;
 }
-.gallery-thumbnails img {
-    width: 100px;
+.bottom-images img {
+    width: 100px; 
     height: auto;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.3s;
-}
-.gallery-thumbnails img:hover {
-    opacity: 1;
 }
