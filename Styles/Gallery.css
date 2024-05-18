@@ -48,11 +48,11 @@ body {
 }
 .gallery-main {
     position: relative;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 .gallery-main img {
-    border-right: 70px solid #3a2108;
-    border-left: 70px solid #3a2108;
+    border-right: 100px solid #3a2108;
+    border-left: 100px solid #3a2108;
     border-top: 10px solid #3a2108;
     border-bottom: 10px solid #3a2108;
     width: 900px;
@@ -63,6 +63,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    border: 1px solid #3a2108;
 }
 .gallery-thumbnails img {
     width: 100px;

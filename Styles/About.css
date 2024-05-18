@@ -5,11 +5,11 @@ body {
 } 
 #about {
     background-image: url(../Images/Site-background.png);
-    background-size: 100svw 80svh;
+    background-size: 100svw auto;
     background-repeat: no-repeat;
     background-attachment: inherit;
     position: relative; 
-    height: 80svh; 
+    height: auto; 
     width: 100svw;
 }
 .about-transition {
