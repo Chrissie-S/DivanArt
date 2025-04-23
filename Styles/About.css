@@ -5,12 +5,12 @@ body {
 } 
 #about {
     background-image: url(../Images/Site-background.png);
-    background-size: 100svw auto;
+    background-size: 100vw auto;
     background-repeat: no-repeat;
     background-attachment: inherit;
     position: relative; 
     height: auto; 
-    width: 100svw;
+    width: 100vw;
 }
 .about-transition {
     position: relative;
@@ -44,7 +44,7 @@ body {
     justify-content: center;
     height: auto;   
     margin-top: 80px;
-    width: 85svw;
+    width: 85vw;
     margin-left: auto;
     margin-right: auto;
 }
