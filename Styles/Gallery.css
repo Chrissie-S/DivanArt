@@ -39,6 +39,8 @@ body {
 }
 .gallery-container {
     display: grid;
+    flex-wrap: wrap;
+    gap: 1rem;
     grid-template-areas: 
       "left main right"
       "bottom bottom bottom";
