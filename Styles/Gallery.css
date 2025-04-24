@@ -38,13 +38,14 @@ body {
     margin-top: -30px;
 }
 .gallery-container {
-    display: flex;
+    display: grid;
     grid-template-areas: 
       "left main right"
       "bottom bottom bottom";
     gap: 30px;
     justify-items: center;
     align-items: start;
+    width: 85svw;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
