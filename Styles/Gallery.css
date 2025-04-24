@@ -68,11 +68,11 @@ body {
 }
 .side-images.left {
     grid-area: left;
-    margin-left: 0px;
+    gap: 50px;
 }
 .side-images.right {
     grid-area: right;
-    margin-right: 0px;
+    gap: 50px;
 }
 .side-images img {
     width: 100px; 
