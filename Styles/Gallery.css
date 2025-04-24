@@ -68,11 +68,11 @@ body {
 }
 .side-images.left {
     grid-area: left;
-    padding-left: 230px;
+    margin-left: 230px;
 }
 .side-images.right {
     grid-area: right;
-    padding-right: 230px;
+    margin-right: 230px;
 }
 .side-images img {
     width: 100px; 
