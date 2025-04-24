@@ -46,6 +46,8 @@ body {
     justify-items: center;
     align-items: start;
     margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-image {
     border-right: #3a2108 solid 100px;
